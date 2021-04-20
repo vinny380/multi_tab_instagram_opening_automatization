@@ -2,11 +2,14 @@ import pyautogui
 import time
 import datetime
 import webbrowser as wb
+import sys
 
-
+# Opening instagram
 wb.open("https://www.instagram.com/vinicius2prg/")
 
-# Variables page 1
+# ______________ VARIABLES ________________
+
+# Variables used as coordinates to log in the first account
 profile_click_x, profile_click_y = 427, 0
 instagram_profile_icon_x, instagram_profile_icon_y = 1173, 142
 switch_accounts_x, switch_accounts_y = 1089, 296
@@ -15,13 +18,13 @@ login_x, login_y = 708, 494
 passwrd_x, passwrd_y = 693, 539
 press_login_x, press_login_y = 719, 615
 
-# Variables page 2,3,4,5
+# Variables for accounts 2,3,4,5
 nav_bar_x, nav_bar_y = 643, 57
 username_button_x, username_button_y = 893, 323
 psswrd_button_x, psswrd_button_y = 926, 365
 login_button_x, login_button_y = 918, 411
 
-# Profiles positions
+# CHanging Chrome Profiles coordinates
 account_03_x, account_03_y = 450, 375
 account_05_x, account_05_y =465, 139
 
@@ -30,8 +33,7 @@ login_6_x, login_6_y = 931, 290
 psswrd_6_x, psswrd_6_y =911, 331
 button_6_x, button_6_y =921, 384
 
-
-
+#_________________CODE_____________________
 
 # Account 1
 time.sleep(8)
@@ -155,8 +157,4 @@ pyautogui.moveTo(button_6_x, button_6_y)
 time.sleep(0.5)
 pyautogui.click()
 
-
-
-
-
-
+sys.exit()
