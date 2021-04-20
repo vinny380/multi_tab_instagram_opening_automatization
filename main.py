@@ -3,7 +3,6 @@ import time
 import datetime
 import webbrowser as wb
 
-screen_width, screen_height = pyautogui.size()
 
 wb.open("https://instagram.com")
 
@@ -23,6 +22,7 @@ login_button_x, login_button_y = 918, 411
 
 # Profiles positions
 account_03_x, account_03_y = 445, 307
+account_05_x, account_05_y =465, 139
 
 # Account 1
 time.sleep(8)
@@ -59,7 +59,7 @@ time.sleep(5)
 pyautogui.moveTo(username_button_x, username_button_y)
 pyautogui.click()
 time.sleep(0.6)
-pyautogui.write('')#username goes here
+pyautogui.write('') # username
 pyautogui.moveTo(psswrd_button_x, psswrd_button_y)
 pyautogui.click()
 time.sleep(0.3)
@@ -92,7 +92,7 @@ pyautogui.press('enter')
 time.sleep(5)
 pyautogui.moveTo(username_button_x, username_button_y)
 pyautogui.click()
-pyautogui.write('') #username goes here
+pyautogui.write('') # username
 pyautogui.moveTo(psswrd_button_x, psswrd_button_y)
 pyautogui.click()
 time.sleep(0.3)
@@ -101,6 +101,23 @@ pyautogui.write('') # password
 pyautogui.moveTo(login_button_x, login_button_y)
 time.sleep(0.5)
 pyautogui.click()
+time.sleep(0.8)
+
+# Account 5
+pyautogui.moveTo(profile_click_x, profile_click_y)
+time.sleep(1)
+pyautogui.click()
+time.sleep(1)
+pyautogui.moveTo(account_05_x, account_05_y)
+time.sleep(0.6)
+pyautogui.click()
+time.sleep(1)
+pyautogui.write('instagram.com')
+time.sleep(0.5)
+pyautogui.press('enter')
+time.sleep(0.3)
+pyautogui.hotkey('command', 'shift', 'n')
+
 
 
 
